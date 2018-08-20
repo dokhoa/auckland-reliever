@@ -13,7 +13,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws s3 cp static s3://aucklandreliever.co.nz/ --recursive
+      - aws s3 cp static s3://aucklandreliever.co.nz/static --recursive
       - aws s3 cp index.html s3://aucklandreliever.co.nz/
 artifacts:
   files:
